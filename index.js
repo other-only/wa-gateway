@@ -286,9 +286,6 @@ app.get('/send-message', async (req, res) => {
     }
     try {
         // Cek apakah sistem diaktifkan
-        const systemCheck = checkSystemEnabled(res, 'mengirim pesan ke nomor');
-        if (systemCheck) return systemCheck;
-        
         const { number, message } = req.query;
         
         if (!number || !message) {
