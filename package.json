@@ -1,0 +1,30 @@
+{
+  "name": "wa-gateway-baileys",
+  "version": "1.0.0",
+  "description": "Simple WhatsApp Gateway using Baileys",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "nodemonConfig": {
+    "ignore": ["session/*", "node_modules/*", "*.log"]
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.8",
+    "@hapi/boom": "^10.0.1",
+    "express": "^4.19.2",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "keywords": [
+    "whatsapp",
+    "baileys",
+    "gateway",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT"
+}
